@@ -311,8 +311,29 @@ img {
   transition: all 0.5s ease;
 }
 .btn:hover {
-  background-color: var(--clr-def-2);
+  background-color: #000;
+  text-decoration: none;
   color: var(--clr-white);
+}
+.btn-hero:hover {
+  background-color: #000;
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+.btn-hero {
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 2.5rem 5.5rem;
+  background-color: var(--clr-def);
+  color: var(--clr-white);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  line-height: 1;
+  transition: all 0.5s ease;
 }
 
 .btn-sm {
@@ -342,7 +363,7 @@ img {
   width: 100%;
   z-index: -1;
   background: var(--clr-gradient-5);
-  opacity: 1;
+  opacity: 0.5;
   top: 0;
   left: 0;
 }
