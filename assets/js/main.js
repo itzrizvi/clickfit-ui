@@ -77,10 +77,11 @@
 
     // File Uploader
     // Specify the server's URL where Node.js is running
-    var serverUrl = "http://localhost:4000/uploadimages"; // Replace with your server's URL and port
+    var serverUrl = "http://localhost:4000/api/uploadimages"; // Replace with your server's URL and port
     $("#thefiles").FancyFileUpload({
       url: serverUrl,
       maxfilesize: 1000000,
+      params: { file: "file" },
     });
   }); // end document ready function
 })(jQuery); // End jQuery
