@@ -215,6 +215,12 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-3 {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .grid-4 {
   display: grid;
   grid-gap: 3rem;
@@ -336,6 +342,10 @@ img {
   transition: all 0.5s ease;
 }
 
+.service-area .btn-hero {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .btn-sm {
   padding: 1.5rem 3.5rem;
 }
@@ -923,4 +933,141 @@ input::-moz-focus-outer {
   max-height: 300px;
   margin: 10px;
   border: 1px solid #ccc;
+}
+
+.service-box {
+  background-color: var(--clr-white);
+  box-shadow: 1px 10px 60px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  border-radius: 10px;
+}
+.service-box:hover .service-btn {
+  color: var(--clr-def);
+}
+.service-box:hover .service-btn::before {
+  width: 9%;
+}
+.service-box .service-shape {
+  position: absolute;
+  content: "";
+  height: 10rem;
+  width: 2rem;
+  z-index: -1;
+  background: var(--clr-bg);
+  opacity: 1;
+  top: -5px;
+  right: 6rem;
+  display: block;
+  transform: skewY(50deg);
+  right: 0rem;
+}
+.service-box .service-shape::before {
+  position: absolute;
+  content: "";
+  height: 10rem;
+  width: 2rem;
+  z-index: -1;
+  background: var(--clr-bg);
+  opacity: 1;
+  top: -5px;
+  right: 6rem;
+}
+.service-box .service-shape::after {
+  position: absolute;
+  content: "";
+  height: 10rem;
+  width: 2rem;
+  z-index: -1;
+  background: var(--clr-bg);
+  opacity: 1;
+  top: -5px;
+  right: 30px;
+}
+.service-box .service-icon-title {
+  padding: 6rem 4rem 0 4rem;
+}
+.service-box .service-icon-title i {
+  display: block;
+  margin-bottom: 2rem;
+}
+.service-box .service-icon-title i img {
+  width: 90px;
+}
+.service-box .service-icon-title h4 {
+  font-size: 5rem;
+  line-height: 57px;
+  margin-bottom: 3rem;
+}
+.service-box .service-desc {
+  position: relative;
+  z-index: 1;
+  margin: 0 3rem;
+  padding: 8rem 3rem 3rem 3rem;
+}
+.service-box .service-desc:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--clr-black);
+  opacity: 0.7;
+  top: 35px;
+  left: 0;
+  transform: skewY(9deg);
+  border-radius: 10px;
+}
+.service-box .service-desc p {
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+.service-btn {
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  z-index: 1;
+  padding-left: 5rem;
+  letter-spacing: 1px;
+}
+.service-btn::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 4rem;
+  z-index: -1;
+  background: var(--clr-white);
+  opacity: 0.7;
+  top: 50%;
+  translate: 0 -50%;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.service-shape-16 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  translate: 0 -50%;
+  z-index: -1;
+  width: 50%;
+}
+.service-shape-17 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.service-icon-3.white-overlay {
+  height: 200px;
+}
+.service-icon-3.white-overlay::before {
+  width: 60%;
+  border-radius: 50% 0 0 50%;
 }

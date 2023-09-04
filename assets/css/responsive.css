@@ -134,6 +134,26 @@
   .contact-area.white-overlay.de-padding {
     overflow: hidden;
   }
+
+  .service-title {
+    margin-bottom: 3rem;
+  }
+
+  .service-title .hero-sub-title {
+    margin-bottom: 2rem;
+  }
+
+  .service-title .heading-1 {
+    margin-bottom: 3rem;
+  }
+
+  .service-wpr.grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-wpr.grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -144,7 +164,9 @@
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .navbar .navbar-nav .nav-item .nav-link {
     height: inherit;
     line-height: 50px;
@@ -321,6 +343,10 @@
     grid-template-columns: 1fr;
   }
 
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
   .grid-4 {
     grid-template-columns: 1fr;
   }
@@ -461,6 +487,14 @@
   }
 
   .footer-logo {
+    margin-bottom: 2rem;
+  }
+
+  .service-title {
+    margin-bottom: 3rem;
+  }
+
+  .service-title .hero-sub-title {
     margin-bottom: 2rem;
   }
 }
