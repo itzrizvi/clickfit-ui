@@ -161,6 +161,11 @@
     grid-template-columns: 1fr;
   }
 
+  a.navbar-brand h1 {
+    color: #000000 !important;
+    margin-top: 11px;
+  }
+
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -286,6 +291,11 @@
 @media only screen and (max-width: 767px) {
   .de-padding {
     padding: 5rem 0;
+  }
+
+  a.navbar-brand h1 {
+    color: #000000 !important;
+    margin-top: 11px;
   }
 
   .de-pt {
@@ -414,8 +424,12 @@
     padding-left: 0;
   }
 
+  .about-left-1 {
+    display: none;
+  }
+
   .about-left-2 {
-    margin-top: -16rem;
+    margin-top: 14rem;
   }
 
   .about-right-2.pl-60 {
@@ -496,5 +510,8 @@
 
   .service-title .hero-sub-title {
     margin-bottom: 2rem;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
   }
 }

@@ -847,6 +847,8 @@ input::-moz-focus-outer {
 .benefit-single {
   padding: 5rem 3rem;
   border-radius: 10px;
+  background-size: cover;
+  background-position: center;
 }
 .benefit-single i {
   width: 7rem;
@@ -1070,4 +1072,25 @@ input::-moz-focus-outer {
 .service-icon-3.white-overlay::before {
   width: 60%;
   border-radius: 50% 0 0 50%;
+}
+
+@keyframes round-move {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.round-move {
+  animation: round-move 5s linear infinite;
+}
+
+.upload-anim-shape {
+  position: absolute;
+  bottom: -160px;
+  left: -240px;
+  z-index: -1;
+  animation: round-move 5s linear infinite;
 }
